@@ -240,12 +240,9 @@ export class AppComponent {
   }
 
   verifyComp() {
-    console.log('start')
     if (this.calculateCredit() <= 135) {
-      console.log('value true')
       let rng = 0, mad = 0, dw = 0, c9 = 0, psg = 0, pgg = 0
       for (const [key, value] of Object.entries(this.comp)) {
-        console.log(key, value)
         if (key !== 'coach') {
           switch (value['team']) {
             case 'RNG':
